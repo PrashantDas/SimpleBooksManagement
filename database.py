@@ -10,7 +10,7 @@ def get_all_books():
         return json.load(fread)
 
 
-def _save_all_books(data):  # name includes a preceding underscore to ward of evil programmers
+def _save_all_books(data):  # name includes a preceding underscore to ward off evil programmers
     with open(file_name, 'w') as fwrite:
         json.dump(data, fwrite)
     print("The database was updated")
